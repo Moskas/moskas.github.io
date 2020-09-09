@@ -52,3 +52,15 @@ footer{
     background-color: #3F3F3F;
     border-top: 2px solid black;
 }
+
+.list{
+    width:70%;
+    float:left;
+    height:100%;
+}
+
+.packs{
+    height:100%;
+    width:30%;
+    display:inline;
+}
