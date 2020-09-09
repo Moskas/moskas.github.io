@@ -17,6 +17,7 @@ main{
     background-color: #696969;
     z-index:1;
     min-height: 100%;
+    padding-bottom: 180px;
 }
 
 .left{
@@ -51,6 +52,7 @@ a:hover.menu{
 footer{
     background-color: #3F3F3F;
     border-top: 2px solid black;
+    display:block;
 }
 
 .list{
