@@ -1,32 +1,42 @@
 :root {
+
     /*  Accent colors       */
-    --dark-red:     #cc241d;
-│   --red:          #fb4934;
-│   --dark-green:   #98971a;
-│   --green:        #b8bb26;
-│   --dark-yellow:  #d79921;
-│   --yellow:       #fabd2f;
-│   --dark-blue:    #458588;
-│   --blue:         #83a598;
-│   --dark-magenta: #b16286;
-│   --magenta:      #d3869b;
-│   --dark-cyan:    #689d6a;
-│   --cyan:         #8ec07c;
-│   --dark-gray:    #3d3d3d;
-│   --gray:         #666666;
-    /*  Background colors   */
+    --gruv-dark-red:     #cc241d;
+│   --gruv-red:          #fb4934;
+│   --gruv-dark-green:   #98971a;
+│   --gruv-green:        #b8bb26;
+│   --gruv-dark-yellow:  #d79921;
+│   --gruv-yellow:       #fabd2f;
+│   --gruv-dark-blue:    #458588;
+│   --gruv-blue:         #83a598;
+│   --gruv-dark-magenta: #b16286;
+│   --gruv-magenta:      #d3869b;
+│   --gruv-dark-cyan:    #689d6a;
+│   --gruv-cyan:         #8ec07c;
+│   --gruv-dark-gray:    #3d3d3d;
+│   --gruv-gray:         #666666;
+    /*  Dark colors   */
     --bg:           #282828;
     --bg0_h:        #1d2021;
     --bg0_s:        #32302f;
-    /*  Foreground colors   */
+    --bg1:          #3c3836;
+    --bg2:          #504945;
+    --bg3:          #665c54;
+    --bg4:          #7c6f64;
+    /*  Light colors   */
     --fg:           #ebdbb2;
+    --fg0:          #fbf1c7;
+    --fg1:          #ebdbb2;
+    --fg2:          #d5c4a1;
+    --fg3:          #bdae93;
     --fg4:          #a89984;
 }
 
 body {
+    font: 1.0rem Inconsolata, monospace;
     background-color: var(--bg);
-    color: var(--bg);
 }
+
 
 .me {
     color: var(--fg);
@@ -35,13 +45,25 @@ body {
 .main {
     color: var(--fg);
 }
-
-a {
-    color: var(--fg);
+h1{
+    font: 2rem Inconsolata, monospace;
+    color: #8ec07c;
 }
 
-a:hover {
-    color: var(--red);
+h2 {
+    color: #cc241d;
+}
+
+h3{
+
+}
+
+h5{
+    color: #fabd2f;
+}
+
+b {
+    color: #fb4934;
 }
 
 .gruv-dark {
@@ -54,11 +76,20 @@ a:hover {
 }
 
 .navbar-dark .navbar-nav .nav-link {
-    color: var(--fg);
+/*    color: #ebdbb2; */
+    color: var(--gruv-cyan);
+    text-decoration: underline;
+    text-decoration-color: #b8bb26;
+}
+a {
+/*    color: #ebdbb2; */
+    color: #8ec07c;
+    text-decoration: underline;
+    text-decoration-color: #b8bb26;
 }
 
 ul.navbar-nav a:hover{
-    color: var(--orange) !important;
+    color: #fabd2f !important;
 }
 
 .footer {
