@@ -21,7 +21,6 @@
     /*  Foreground colors   */
     --fg:           #ebdbb2;
     --fg4:          #a89984;
-
 }
 
 body {
@@ -38,7 +37,7 @@ body {
 }
 
 a {
-    color: inherit;
+    color: var(--fg);
 }
 
 a:hover {
@@ -52,6 +51,14 @@ a:hover {
 
 .navbar {
     border-bottom: 2px dotted var(--fg);
+}
+
+.navbar-dark .navbar-nav .nav-link {
+    color: var(--fg);
+}
+
+ul.navbar-nav a:hover{
+    color: var(--orange) !important;
 }
 
 .footer {
