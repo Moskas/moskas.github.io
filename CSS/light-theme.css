@@ -9,10 +9,19 @@ html {
 }
 
 h1 {
-  color: #d3869b;
+  color: #b16286;
 }
 
 p {
+}
+
+a {
+  color: #427b58;
+  text-decoration-color: #79740e;
+}
+
+a:hover {
+  color: #689d6a;
 }
 
 .navbar {
@@ -20,11 +29,20 @@ p {
   color: #1d2021;
 }
 
-.nav-link {
+.navbar a {
+  color: #8ec07c;
+  text-decoration: underline;
+  text-decoration-color: #b8bb26;
+}
+.footer a {
+  color: #8ec07c;
+  text-decoration: underline;
+  text-decoration-color: #b8bb26;
 }
 
 .info img {
   border: 2px dotted #32302f;
+  background-color: #bdae93;
 }
 
 .switch {

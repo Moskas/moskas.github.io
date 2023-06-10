@@ -9,10 +9,16 @@ html {
   color: #ebdbb2;
 }
 
+a:hover {
+  color: #689d6a;
+  text-decoration-color: #427b58;
+}
+
 .navbar {
   background-color: #32302f;
 }
 
 .info img {
   border: 2px dotted #fbf1c7;
+  background-color: #665c54;
 }

@@ -4,10 +4,10 @@
   <!-- Required meta tags -->
   <meta charset="utf-8">
   <meta name="viewport" content=
-  "width=device-width, initial-scale=1, shrink-to-fit=no">
+  "width=device-width, initial-scale=1.0, shrink-to-fit=no">
   <meta property="og:title" content="Moskas' Website">
   <meta property="og:description" content=
-  "Packs, charts and personal projects.">
+  "Packs, Charts and personal projects.">
   <meta property="og:url" content="https://moskas.github.io">
   <meta property="og:image:secure_url" content=
   "https://github.com/Moskas/moskas.github.io/blob/master/IMG/kitty.png">
@@ -23,28 +23,28 @@
   <link href="./CSS/colorschemes.css" rel="stylesheet">
   <title>VSRG Packs</title>
   <link rel="icon" href="IMG/kitty.png">
+  <link id="theme-link" rel="stylesheet" type="text/css" href=
+  "CSS/light-theme.css">
+  <script src="theme-toggle.js"></script>
 </head>
 <body>
-  <nav class="navbar navbar-expand-sm gruv-dark navbar-dark">
-    <a class="navbar-brand" href="index.html"><img class=
-    "img-fluid" src="./IMG/kitty.png" style="height:50px;" alt=""
-    onclick="this.src='./IMG/smciota.png'"></a> <button class=
-    "navbar-toggler" type="button" data-toggle="collapse"
-    data-target="#collapsibleNavbar"><span class=
+  <nav class="navbar navbar-expand-sm">
+    <label class="switch"><input type="checkbox" id="theme-toggle">
+    <span class="slider"></span></label> <a class="navbar-brand"
+    href="index.html"><img class="img-fluid" src="./IMG/kitty.png"
+    style="height:50px;" alt="" onclick=
+    "this.src='./IMG/smciota.png'"></a> <button class=
+    "navbar-toggler navbar-dark" type="button" data-toggle=
+    "collapse" data-target="#collapsibleNavbar"><span class=
     "navbar-toggler-icon"></span></button>
     <div class="collapse navbar-collapse" id="collapsibleNavbar">
       <ul class="navbar-nav">
         <li class="nav-item">
-          <a class="nav-link" href="index.html">Start page</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="chart.html">Charts</a>
-        </li>
-        <li class="nav-item">
           <a class="nav-link" href="packs.html">Packs</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="skins.html">Skins</a>
+          <a class="nav-link" href="blog.html">Blog</a>
+          <!-- Not yet added -->
         </li>
         <li class="nav-item">
           <a class="nav-link" href=
@@ -53,34 +53,34 @@
       </ul>
     </div>
   </nav>
-  <main role="main" class="main container">
-    <h2 class="mt-5">Moskas' Originals feat. PMC</h2>
-    <p class="lead">My first Stepmania/Etterna pack.<br>
+  <main role="main" class="main container" style=
+  "padding-top: 20px">
+    <h2>Moskas' Originals feat. PMC</h2>
+    <p>My first Stepmania/Etterna pack.<br>
     The pack mostly consisted of my charts but there were various
     submissions from Polish Mania Community hence the feat. PMC
     part in pack name.<br>
     <a href=
     "https://downloads.etternaonline.com/packs/Moskas'%20Originals%20feat.%20PMC.zip">
     link</a></p>
-    <h2 class="mt-5">Moskas' Originals 2</h2><br>
+    <h2>Moskas' Originals 2</h2><br>
     <img class="img-fluid" alt="Pack Banner" src=
     "https://gitlab.com/Moskas1/moskas-originals-2/-/raw/main/banner_test.png">
-    <p class="lead">WIP pack currently available on
-    Gitlab:</p><a href=
+    <p>WIP pack currently available on Gitlab:</p><a href=
     "https://gitlab.com/Moskas1/moskas-originals-2">Link to
     repo</a>
     <p></p>
     <h2>Guest packs</h2>
     <h5>Etterna Explosion Excitepack</h5>
-    <p class="lead">A First big pack that I was part of and a first
-    pack that I was actually invited to join.<br>
+    <p>A First big pack that I was part of and a first pack that I
+    was actually invited to join.<br>
     As far as I know it was a first big pack that had charts both
     from Asian charting community and various Western charters.<br>
     <a href=
     "https://www.flashflashrevolution.com/vbz/showthread.php?t=151381">
     link</a></p>
     <h5>Pachka Dumpov</h5>
-    <p class="lead">Dump pack with songs from slavic countries.<br>
+    <p>Dump pack with songs from slavic countries.<br>
     To be honest I had made only <b>1</b> chart for that pack and
     it is very poorly made.<br>
     <a href=
@@ -89,7 +89,11 @@
   </main>
   <footer class="footer gruv-dark container-fluid">
     <div class="container">
-      <span class="credit">Moskas 2020</span>
+      <span class="credit">Moskas 2023</span> <span class=
+      "credit"><a rel="me" href=
+      "https://fosstodon.org/@Moskas">Mastodon</a></span>
+      <span class="credit"><a rel="me" href=
+      "https://codeberg.org/Moskas">Codeberg</a></span>
     </div>
   </footer><!-- Optional JavaScript -->
   <!-- jQuery  a first, then Popper.js, then Bootstrap JS -->

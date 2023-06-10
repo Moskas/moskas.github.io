@@ -38,7 +38,7 @@
     width: 100%;
   }
 
-  @media (min-width: 500px) {
+  @media (min-width: 800px) {
     .info {
       flex-basis: 33.33%;
       justify-content: center;
@@ -160,4 +160,8 @@
     padding-left: 6px;
     padding-right: 6px;
     margin: 2px;
+  }
+
+  .slider {
+    display: none;
   }
