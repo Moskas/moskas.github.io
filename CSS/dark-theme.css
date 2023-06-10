@@ -1,4 +1,10 @@
-body {
+::selection {
+  color: #1d2021;
+  background-color: #ebdbb2;
+}
+
+body,
+html {
   background-color: #1d2021;
   color: #ebdbb2;
 }
@@ -7,10 +13,6 @@ body {
   background-color: #32302f;
 }
 
-h1 {
-  color: #d3869b;
-}
-
-p {
-  color: #bdae93;
+.info img {
+  border: 2px dotted #fbf1c7;
 }

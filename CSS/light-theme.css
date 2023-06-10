@@ -3,13 +3,16 @@ html {
   background-color: #fbf1c7;
   color: #3c3836;
 }
+::selection {
+  background-color: #1d2021;
+  color: #ebdbb2;
+}
 
 h1 {
   color: #d3869b;
 }
 
 p {
-  color: #665c54;
 }
 
 .navbar {
@@ -18,6 +21,10 @@ p {
 }
 
 .nav-link {
+}
+
+.info img {
+  border: 2px dotted #32302f;
 }
 
 .switch {
