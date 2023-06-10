@@ -1,5 +1,4 @@
 :root {
-
     /*  Accent colors       */
     --gruv-dark-red:     #cc241d;
 │   --gruv-red:          #fb4934;
@@ -32,70 +31,111 @@
     --fg4:          #a89984;
 }
 
+
+
 body {
-    font: 1.0rem Inconsolata, monospace;
-    background-color: var(--bg);
 }
 
-
 .me {
-    color: var(--fg);
 }
 
 .main {
-    color: var(--fg);
 }
-h1{
-    font: 2rem Inconsolata, monospace;
-    color: #8ec07c;
+h1 {
+  color: #8ec07c;
 }
 
 h2 {
-    color: #cc241d;
+  color: #cc241d;
 }
 
-h3{
-
+h3 {
 }
 
-h5{
-    color: #fabd2f;
+h5 {
+  color: #fabd2f;
 }
 
 b {
-    color: #fb4934;
+  color: #fb4934;
 }
 
 .gruv-dark {
-    background-color: var(--bg0_s);
-    color: var(--fg);
+  background-color: var(--bg0_s);
+  color: var(--fg);
 }
 
 .navbar {
-    border-bottom: 2px dotted var(--fg);
+  border-bottom: 2px dotted var(--fg);
 }
 
 .navbar-dark .navbar-nav .nav-link {
-/*    color: #ebdbb2; */
-    color: var(--gruv-cyan);
-    text-decoration: underline;
-    text-decoration-color: #b8bb26;
+  /*    color: #ebdbb2; */
+  color: var(--gruv-cyan);
+  text-decoration: underline;
+  text-decoration-color: #b8bb26;
 }
 a {
-/*    color: #ebdbb2; */
-    color: #8ec07c;
-    text-decoration: underline;
-    text-decoration-color: #b8bb26;
+  /*    color: #ebdbb2; */
+  color: #8ec07c;
+  text-decoration: underline;
+  text-decoration-color: #b8bb26;
 }
 
-ul.navbar-nav a:hover{
-    color: #fabd2f !important;
+ul.navbar-nav a:hover {
+  color: #fabd2f !important;
 }
 
 .footer {
-    border-top: 2px dotted var(--fg);
+  border-top: 2px dotted var(--fg);
 }
 
-.credit{
-    color: var(--fg4);
+.credit {
+  color: var(--fg4);
+}
+
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 60px;
+  height: 34px;
+  align-items: center;
+}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  transition: 0.4s;
+  border-radius: 34px;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 26px;
+  width: 26px;
+  left: 4px;
+  bottom: 4px;
+  background-color: white;
+  transition: 0.4s;
+  border-radius: 50%;
+}
+
+input[type="checkbox"] {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+input[type="checkbox"]:checked + .slider {
+  background-color: #282828;
+}
+
+input[type="checkbox"]:checked + .slider:before {
+  transform: translateX(26px);
 }
