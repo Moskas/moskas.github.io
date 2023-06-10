@@ -12,6 +12,14 @@ p {
   color: #665c54;
 }
 
+.navbar {
+  background-color: #32302f;
+  color: #1d2021;
+}
+
+.nav-link {
+}
+
 .switch {
   position: relative;
   display: inline-block;
@@ -26,7 +34,7 @@ p {
   left: 0;
   right: 0;
   bottom: 0;
-  background-color: #ccc;
+  background-color: #fbf1c7;
   transition: 0.4s;
   border-radius: 34px;
 }
@@ -38,7 +46,7 @@ p {
   width: 26px;
   left: 4px;
   bottom: 4px;
-  background-color: #fff;
+  background-color: #ebdbb2;
   transition: 0.4s;
   border-radius: 50%;
 }

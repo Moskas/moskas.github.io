@@ -109,7 +109,7 @@ ul.navbar-nav a:hover {
   left: 0;
   right: 0;
   bottom: 0;
-  background-color: #ccc;
+  background-color: #fbf1c7;
   transition: 0.4s;
   border-radius: 34px;
 }
@@ -121,7 +121,7 @@ ul.navbar-nav a:hover {
   width: 26px;
   left: 4px;
   bottom: 4px;
-  background-color: white;
+  background-color: #1d2021;
   transition: 0.4s;
   border-radius: 50%;
 }
