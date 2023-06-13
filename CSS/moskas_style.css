@@ -57,6 +57,21 @@
     }
   }
 
+  @media (max-width: 800px) {
+    .info {
+      justify-content: center;
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+      flex-wrap: wrap;
+      box-sizing: border-box;
+      width: 100%;
+    }
+    .text {
+      box-sizing: border-box;
+    }
+  }
+
   .info img {
     width: 7rem;
     border-radius: 80px;
@@ -99,8 +114,8 @@
     text-decoration: none;
   }
 
-  .heading:focus-visible{
-    outline:none;
+  .heading:focus-visible {
+    outline: none;
     color: var(--gruv-blue);
   }
 
@@ -109,7 +124,6 @@
   }
 
   .osu_logo {
-    color: white;
     background-color: rgb(231, 107, 128);
     width: 30px;
     height: 30px;
@@ -208,14 +222,21 @@
   .main {
     display: flex;
     flex-direction: column;
+    padding-top: 10px;
+    padding-bottom: 10px;
   }
 
   .main img {
     margin: 10px;
     border: 2px solid;
-    max-width: fit-content;
+    align-self: center;
   }
-  
+
+  .text ul li::marker {
+    content: "* ";
+    font-size: 1rem;
+  }
+
   .post {
     padding: 20px 0;
     align-content: center;
