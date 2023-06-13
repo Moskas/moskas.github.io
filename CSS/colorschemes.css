@@ -8,7 +8,7 @@ body {
 }
 
 b {
-  color: #fb4934;
+  color: var(--gruv-red);
 }
 
 li::marker {
@@ -25,7 +25,6 @@ li::marker {
 }
 
 .navbar-dark .navbar-nav .nav-link {
-  /*    color: #ebdbb2; */
   color: var(--gruv-cyan);
   text-decoration: underline;
   text-decoration-color: #b8bb26;

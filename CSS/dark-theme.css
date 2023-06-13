@@ -31,17 +31,15 @@
   --fg4: #a89984;
 }
 
-
-
 ::selection {
-  color: #1d2021;
-  background-color: #ebdbb2;
+  color: var(--bg);
+  background-color: var(--fg);
 }
 
 body,
 html {
-  background-color: #1d2021;
-  color: #ebdbb2;
+  background-color: var(--bg);
+  color: var(--fg);
 }
 
 a {
@@ -55,7 +53,7 @@ a:hover {
 }
 
 .navbar {
-  background-color: #32302f;
+  background-color: var(--bg1);
 }
 
 .navbar-dark .navbar-toggler-icon {
@@ -89,9 +87,9 @@ ul.navbar-nav a:hover {
 }
 
 h1 {
-  color: var(--gruv-magenta)
+  color: var(--gruv-magenta);
 }
 
 h2 {
-  color: var(--gruv-red)
+  color: var(--gruv-red);
 }

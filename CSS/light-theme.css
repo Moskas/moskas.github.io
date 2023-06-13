@@ -34,15 +34,11 @@
 body,
 html {
   background-color: var(--bg0_h);
-  color: var(--fg); 
+  color: var(--fg);
 }
 ::selection {
-  background-color: #1d2021;
-  color: #ebdbb2;
-}
-
-h1 {
-  color: #b16286;
+  background-color: var(--fg);
+  color: var(--bg);
 }
 
 p {
