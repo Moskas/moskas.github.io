@@ -16,6 +16,9 @@
     h1 {
       font-size: 2rem;
     }
+    h2 {
+      font-size: 1.75rem;
+    }
   }
 
   /* Media query for larger screens */
@@ -24,7 +27,7 @@
       font-size: 1.125rem;
     }
     h1 {
-      font-size: 1.5rem;
+      font-size: 2rem;
     }
     h2 {
       font-size: 1.75rem;
@@ -68,10 +71,12 @@
   }
 
   .footer {
+    display: flex;
     position: fixed;
     bottom: 0px;
     height: 60px;
     line-height: 60px;
+    align-self: flex-end;
   }
 
   .footer > .container {
@@ -88,6 +93,15 @@
     height: 100%;
     width: 100%;
     justify-content: center;
+  }
+
+  .heading {
+    text-decoration: none;
+  }
+
+  .heading:focus-visible{
+    outline:none;
+    color: var(--gruv-blue);
   }
 
   body {
@@ -168,13 +182,45 @@
 
   h1 {
     border-bottom: solid 2px;
+    color: var(--gruv-magenta);
   }
-  .post-list {
+
+  h2 {
+    color: var(--gruv-red);
   }
+
+  h3 {
+    color: var(--gruv-green);
+  }
+
+  h4 {
+    color: var(--gruv-cyan);
+  }
+
+  h5 {
+    color: var(--gruv-blue);
+  }
+
+  a {
+    text-decoration: underline;
+  }
+
+  .main {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .main img {
+    margin: 10px;
+    border: 2px solid;
+    max-width: fit-content;
+  }
+  
   .post {
     padding: 20px 0;
     align-content: center;
     justify-content: center;
+    border-bottom: solid 2px;
   }
   .post a {
     text-decoration: none !important;
@@ -188,6 +234,4 @@
   .post .date {
     font-style: italic;
     color: var(--fg3);
-  }
-  .post p {
   }

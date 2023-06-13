@@ -1,19 +1,19 @@
 :root {
   /* Accent colors */
-  --gruv-dark-red: #cc241d;
-  --gruv-red: #fb4934;
-  --gruv-dark-green: #98971a;
-  --gruv-green: #b8bb26;
-  --gruv-dark-yellow: #d79921;
-  --gruv-yellow: #fabd2f;
-  --gruv-dark-blue: #458588;
-  --gruv-blue: #83a598;
-  --gruv-dark-magenta: #b16286;
-  --gruv-magenta: #d3869b;
-  --gruv-dark-cyan: #689d6a;
-  --gruv-cyan: #8ec07c;
-  --gruv-dark-gray: #3d3d3d;
-  --gruv-gray: #666666;
+  --gruv-red: #cc241d;
+  --gruv-dark-red: #fb4934;
+  --gruv-green: #98971a;
+  --gruv-dark-green: #b8bb26;
+  --gruv-yellow: #d79921;
+  --gruv-dark-yellow: #fabd2f;
+  --gruv-blue: #458588;
+  --gruv-dark-blue: #83a598;
+  --gruv-magenta: #b16286;
+  --gruv-dark-magenta: #d3869b;
+  --gruv-cyan: #689d6a;
+  --gruv-dark-cyan: #8ec07c;
+  --gruv-gray: #3d3d3d;
+  --gruv-dark-gray: #666666;
   /* Light colors */
   --bg: #ebdbb2;
   --bg0_h: #fbf1c7;
@@ -33,8 +33,8 @@
 
 body,
 html {
-  background-color: --var(--bg0_h);
-  color: #3c3836;
+  background-color: var(--bg0_h);
+  color: var(--fg); 
 }
 ::selection {
   background-color: #1d2021;
@@ -49,38 +49,45 @@ p {
 }
 
 a {
-  color: #427b58;
-  text-decoration-color: #79740e;
+  color: var(--gruv-cyan);
+  text-decoration-color: var(--gruv-green);
 }
 
 a:hover {
-  color: #689d6a;
-}
-
-.navbar {
-  background-color: --var(--bg0_h);
-  color: #1d2021;
+  color: var(--gruv-dark-cyan);
+  text-decoration-color: var(--gruv-green);
 }
 
 .navbar-dark .navbar-toggler-icon {
-  background-color: #282828;
-  border-radius: 6px;
+  background-image: url(../IMG/hamburger-dark.svg) !important;
 }
 
 .navbar a {
-  color: #8ec07c;
+  color: var(--gruv-cyan);
   text-decoration: underline;
-  text-decoration-color: #b8bb26;
-}
-.footer a {
-  color: #8ec07c;
-  text-decoration: underline;
-  text-decoration-color: #b8bb26;
+  text-decoration-color: var(--gruv-dark-green);
 }
 
+ul.navbar-nav a:hover {
+  color: var(--gruv-dark-cyan) !important;
+  text-decoration: underline !important;
+  text-decoration: var(--gruv-dark-green);
+}
+
+.footer a {
+  color: var(--gruv-cyan);
+  text-decoration: underline !important;
+  text-decoration-color: var(--gruv-dark-green);
+}
+
+.footer a:hover {
+  color: var(--gruv-dark-cyan) !important;
+  text-decoration: underline !important;
+  text-decoration: var(--gruv-dark-green);
+}
 .info img {
-  border: 2px dotted #32302f;
-  background-color: #bdae93;
+  border: 2px dotted var(--fg0);
+  background-color: var(--bg2);
 }
 
 .switch {
