@@ -1,23 +1,29 @@
-  @import url("https://fonts.googleapis.com/css2?family=JetBrains+Mono&display=swap");
+  @font-face {
+    font-family: "JetBrainsMono";
+    src: url("https://github.com/ryanoasis/nerd-fonts/raw/master/patched-fonts/JetBrainsMono/Ligatures/Regular/JetBrainsMonoNerdFont-Regular.ttf"),
+      format("truetype");
+  }
   body {
     margin: 0;
     padding: 0;
     height: 100%;
-    font-family: "JetBrains Mono", monospace;
+    font-family: "JetBrains Mono", monospace !important;
     background-color: #fbf1c7;
-    font-size: 1rem;
   }
 
   /* Media query for smaller screens */
   @media (max-width: 767px) {
     body {
-      font-size: 0.875rem;
+      font-size: 1rem;
     }
     h1 {
       font-size: 2rem;
     }
     h2 {
       font-size: 1.75rem;
+    }
+    h3 {
+      font-size: 1.5rem;
     }
   }
 
@@ -44,12 +50,12 @@
   @media (min-width: 800px) {
     .info {
       flex-basis: 33.33%;
-      justify-content: center;
       display: flex;
       align-items: center;
       flex-direction: column;
       flex-wrap: wrap;
       box-sizing: border-box;
+      word-break: break;
     }
     .text {
       flex-basis: 66.66%;
@@ -65,11 +71,32 @@
       flex-direction: column;
       flex-wrap: wrap;
       box-sizing: border-box;
-      width: 100%;
+      width: 100% !important;
     }
+
+    .info p {
+      width: 100% !important;
+    }
+
+    .info h1 {
+      width: 100% !important;
+    }
+
     .text {
       box-sizing: border-box;
     }
+  }
+
+  .info p {
+    width: 80%;
+    text-align: center;
+  }
+
+  .info h1 {
+  }
+
+  .info ul {
+    padding-left: 20px;
   }
 
   .info img {
@@ -77,6 +104,15 @@
     border-radius: 80px;
     padding: 2px;
     margin: 2px;
+  }
+
+  .info ul li::marker {
+    content: "* ";
+  }
+
+  .info-list {
+    text-align: start;
+    width: 80%;
   }
 
   .me {
@@ -92,6 +128,11 @@
     height: 60px;
     line-height: 60px;
     align-self: flex-end;
+  }
+
+  .footer a {
+    text-decoration: none !important;
+    font-size: 1.2rem;
   }
 
   .footer > .container {
@@ -192,6 +233,10 @@
 
   .slider {
     display: none;
+  }
+
+  .nav-link {
+    font-size: 1.4rem;
   }
 
   h1 {
