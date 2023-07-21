@@ -1,2 +1,2 @@
-# moskas.github.io
-Personal website to post links and stuff
+# Information
+Temporary testing of possible new static webpage

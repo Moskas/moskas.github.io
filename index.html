@@ -1,174 +1,34 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <!-- Required meta tags -->
-  <meta charset="utf-8">
-  <meta name="viewport" content=
-  "width=device-width, initial-scale=1.0, shrink-to-fit=no">
-  <meta property="og:title" content="Moskas' Website">
-  <meta property="og:description" content=
-  "Packs, Charts and personal projects.">
-  <meta property="og:url" content="https://moskas.github.io">
-  <meta property="og:image" content=
-  "https://github.com/Moskas/moskas.github.io/blob/master/IMG/kitty.png">
-  <meta property="og:type" content="image/png">
-  <meta property="og:width" content="400">
-  <meta property="og:height" content="400"><!-- Bootstrap CSS -->
-  <link rel="stylesheet" href=
-  "https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
-  integrity=
-  "sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
-  crossorigin="anonymous">
-  <link href="./CSS/moskas_style.css" rel="stylesheet">
-  <link href="./CSS/colorschemes.css" rel="stylesheet">
-  <title>Moskas' Sandbox</title>
-  <link rel="icon" href="IMG/kitty.png">
-  <link id="theme-link" rel="stylesheet" type="text/css" href=
-  "CSS/light-theme.css">
-  <script src="theme-toggle.js"></script>
+    <meta charset="utf-8">
+    <title>Moskas' Website</title>
+    <link rel="stylesheet" href="./CSS/style.css">
+    <meta name="viewport" content=
+    "width=device-width,initial-scale=1">
+    <link rel="icon" href="IMG/kitty.png">
 </head>
 <body>
-  <nav class="navbar gruv-dark navbar-expand-sm">
-    <label class="switch"><input type="checkbox" id="theme-toggle">
-    <span class="slider"></span></label> <a class="navbar-brand"
-    href="index"><img class="img-fluid" src="./IMG/kitty.png"
-    style="height:50px;" alt="" onclick=
-    "this.src='./IMG/smciota.png'"></a> <button class=
-    "navbar-toggler navbar-dark" type="button" data-toggle=
-    "collapse" data-target="#collapsibleNavbar"><span class=
-    "navbar-toggler-icon"></span></button>
-    <div class="collapse navbar-collapse" id="collapsibleNavbar">
-      <ul class="navbar-nav">
-        <li class="nav-item">
-          <a class="nav-link" href="packs">Packs</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="blog">Blog</a>
-          <!-- Not yet added -->
-        </li>
-      </ul>
-    </div>
-  </nav>
-  <main role="main" class="flex_main container" style=
-  "display:flex;">
-    <div class="info">
-      <img src="./IMG/kitty.png" alt="Avatar">
-      <h1 style="width: 80%; text-align: center;">Moskas</h1>
-      <p>Hobbyist programmer, gruvbox enjoyer.</p>
-      <div class="info-list">
-        <h1>Languages</h1>
-        <ul>
-          <li>Rust</li>
-          <li>Python</li>
-          <li>Bash</li>
-          <li>C/C++</li>
-          <li>Clojure/Elisp</li>
-        </ul>
-        <h1>Skills</h1>
-        <ul>
-          <li title="I use Arch btw">Linux <b style=
-          "color:var(--gruv-blue)">   </b></li>
-          <li title="duh">Git</li>
-          <li>SQL</li>
-        </ul>
-      </div>
-    </div>
-    <div class="text">
-      <h1 id="about_me">Something about me</h1>
-      <p>I'm a Polish rhythm game player and programmer/tech geek
-      in my free time. I'm a Linux user and FOSS enthusiast. I
-      enjoy reading manga and watching anime. Currently, I am
-      learning Rust and Python in my free time.</p>
-      <h1 id="contact">Contact</h1>
-      <h3>Socials</h3>
-      <ul>
-        <li>
-          <a href="https://fosstodon.org/@Moskas">Mastodon</a>
-        </li>
-        <li>
-          <a href="https://twitter.com/@Moskas_dev">Twitter</a>
-        </li>
-      </ul>
-      <h3>Code</h3>
-      <ul>
-        <li>
-          <a href="https://github.com/Moskas">Github</a>
-        </li>
-        <li>
-          <a href="https://codeberg.org/Moskas">Codeberg</a>
-        </li>
-        <li>
-          <a href="https://gitlab.org/Moskas1">Gitlab</a>
-        </li>
-        <li>
-          <a href=
-          "https://www.codewars.com/users/Moskas">Codewars</a>
-        </li>
-      </ul>
-      <h3>Communicators and games</h3>
-      <ul>
-        <li>Discord: moskas <i style="color: var(--fg3)">(legacy:
-        Moskas#5626)</i></li>
-        <li>Matrix: @Moskas:matrix.org</li>
-        <li>osu!/Etterna/quaver: Moskas</li>
-      </ul>
-      <h1 id="projects">My projects</h1>
-      <p>Personal projects that I have created. Mostly written in
-      Rust and Python</p>
-      <ul>
-        <li>
-          <h3><a href="https://github.com/Moskas/mpd-notify-rs">mpd
-          notification daemon</a></h3>
-          <p>Simple notification daemon for mpd, it fetches album,
-          artist, title and cover of the album and sends a
-          notification about status, song changes etc. Works across
-          all platforms that are supported by Rust and mpd.</p>
-        </li>
-        <li>
-          <h3><a href=
-          "https://github.com/Moskas/vibepy">vibepy</a></h3>
-          <p>Small cli application written in Python that scrapes
-          YouTube channel/playlist and plays random video from
-          given channel/playlist. As name implies it's for "vibing"
-          so it's for background noise while you work or relax.</p>
-        </li>
-        <li>
-          <h3><a href=
-          "https://github.com/Moskas/wh-dl">whdl</a></h3>
-          <p>Cli application written in Rust for querying links for
-          wallpapers from <a href=
-          "https://wallhaven.cc/">wallhaven.cc</a> using it's api
-          and async Rust.</p>
-        </li>
-      </ul>
-    </div>
-  </main>
-  <footer class="footer gruv-dark container-fluid">
-    <div class="container">
-      <span class="credit">Moskas 2023</span> <span class=
-      "credit"><a title="Mastodon" rel="me" href=
-      "https://fosstodon.org/@Moskas">󰫑</a></span> <span class=
-      "credit"><a title="Codeberg" rel="me" href=
-      "https://codeberg.org/Moskas"></a></span> <span class=
-      "credit"><a title="Github" rel="me" href=
-      "https://github.com/Moskas"></a></span>
-    </div><a title="Website source code" href=
-    "https://github.com/Moskas/moskas.github.io">󰊢</a>
-  </footer><!-- Optional JavaScript -->
-  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-  <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
-  integrity=
-  "sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
-  crossorigin="anonymous"></script>
-  <script src=
-  "https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
-  integrity=
-  "sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
-  crossorigin="anonymous"></script>
-  <script src=
-  "https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
-  integrity=
-  "sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
-  crossorigin="anonymous"></script>
+    <header>
+        <p class="logo">Moskas' Website</p><a href=
+        "index.html">Home</a> | <a href="blog.html">Blog</a> |
+        <a href="about.html">About Me</a> | <a href=
+        "projects.html">Projects</a> | <a href="cats.html">Cats</a>
+        | <a href="vsrg.html">Rhythm games</a>
+    </header>
+    <main>
+        <h1>Hello there!</h1><img src="IMG/kitty.png" class=
+        "img-paragraph" alt="Avatar of a white cat">
+        <p>I'm Moskas, a hobbyist computer programmer from Poland.
+        The website has no particular topic other than being mostly
+        tech related. It's mainly a place for me to write some
+        thoughts or list my programming or rhythm game
+        projects.</p>
+    </main>
+    <footer>
+        <span style="padding-left: 5px;"><a href="feed.xml">rss</a> <a href="https://github.com/Moskas">git</a>
+        <a href="https://fosstodon.org/@Moskas">mas</a> <a href="https://twitter.com/@moskas_dev">twi</a></span> <span style=
+        "float: right; padding-right: 5px;">Moskas 2023</span>
+      </footer>
 </body>
 </html>
