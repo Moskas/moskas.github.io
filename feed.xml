@@ -1,17 +1,23 @@
-<?xml version="1.0" encoding="UTF-8" ?>
+<?xml version="1.0" encoding="utf-8"?>
 <rss version="2.0">
-
-<channel>
-  <title>Moskas' Blog</title>
-  <link>https://moskas.github.io/POSTS/</link>
-  <description>Moskas' blog</description>
-  <item>
-  	<title>Hipsum</title>
-        <guid>https://moskas.github.io/POSTS/hipsum</guid>
-  	<link>https://moskas.github.io/POSTS/hipsum</link>
-  	<description>Test article</description>
-        <pubDate>Wed, 19 Jul 2023 00:00:00 +0000</pubDate>
-  </item>
-</channel>
-
+  <channel>
+    <title>Moskas' Blog</title>
+    <link>https://moskas.github.io/</link>
+    <description>Moskas' blog</description>
+    <item>
+      <title>Keyboards and me</title>
+      <guid>https://moskas.github.io/POSTS/keyboards</guid>
+      <link>https://moskas.github.io/POSTS/keyboards</link>
+      <description>Rant about my keyboards and wrist
+      health</description>
+      <pubDate>Wed, 25 Jul 2023 22:45:00 +0000</pubDate>
+    </item>
+    <item>
+      <title>Hipsum</title>
+      <guid>https://moskas.github.io/POSTS/hipsum</guid>
+      <link>https://moskas.github.io/POSTS/hipsum</link>
+      <description>Test article</description>
+      <pubDate>Wed, 19 Jul 2023 00:00:00 +0000</pubDate>
+    </item>
+  </channel>
 </rss>
