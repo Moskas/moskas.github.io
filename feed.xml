@@ -13,10 +13,11 @@
       <pubDate>Wed, 25 Jul 2023 22:45:00 +0000</pubDate>
     </item>
     <item>
-      <title>Hipsum</title>
-      <guid>https://moskas.github.io/POSTS/hipsum</guid>
-      <link>https://moskas.github.io/POSTS/hipsum</link>
-      <description>Test article</description>
+      <title>Yet another website revision</title>
+      <guid>https://moskas.github.io/POSTS/website-revision</guid>
+      <link>https://moskas.github.io/POSTS/website-revision</link>
+      <description>Small introduction post to the website and it's
+      design</description>
       <pubDate>Wed, 19 Jul 2023 00:00:00 +0000</pubDate>
     </item>
   </channel>

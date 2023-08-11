@@ -126,11 +126,39 @@
                 whatever franzen nulla. DSA deep v ipsum taxidermy
                 labore same 3 wolf moon craft beer occupy. Tumblr
                 kogi laboris vice lumbersexual.</p>
+                <h5>Rust Code</h5>
+                <pre>
+                        <code lang="rust">
+use std::io;
+
+fn main() {
+    // Prompt the user for their name
+    println!("Please enter your name:");
+
+    // Create a mutable string to store the user's name
+    let mut name = String::new();
+
+    // Read the user's input and store it in the 'name' variable
+    io::stdin().read_line(&amp;mut name).expect("Failed to read line");
+    
+    // Trim any whitespace and newline characters from the input
+    name = name.trim().to_string();
+
+    // Greet the user
+    println!("Hello, {}!", name);
+}
+                        </code>
+                </pre>
         </main>
         <footer>
-                <span style="padding-left: 5px;"><a href="feed.xml">rss</a> <a href="https://github.com/Moskas">git</a>
-                <a href="https://fosstodon.org/@Moskas">mas</a> <a href="https://twitter.com/@moskas_dev">twi</a></span> <span style=
-                "float: right; padding-right: 5px;">Moskas 2023</span>
+                <span style="padding-left: 5px;"><a href=
+                "feed.xml">rss</a> <a href=
+                "https://github.com/Moskas">git</a> <a href=
+                "https://fosstodon.org/@Moskas">mas</a> <a href=
+                "https://twitter.com/@moskas_dev">twi</a></span>
+                <span style=
+                "float: right; padding-right: 5px;">Moskas
+                2023</span>
         </footer>
 </body>
 </html>

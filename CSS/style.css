@@ -143,11 +143,16 @@ main p {
 
 a {
   color: var(--gruv-cyan);
+  text-decoration: none;
 }
 
 a:hover {
   color: var(--gruv-dark-cyan);
   text-decoration-color: var(--gruv-dark-green);
+}
+
+i {
+  color: var(--fg4);
 }
 
 body > footer {
@@ -301,7 +306,6 @@ blockquote {
   .text {
     box-sizing: border-box;
   }
-
   .info-list {
     width: 100% !important;
   }
@@ -339,10 +343,20 @@ blockquote {
   width: 80%;
 }
 
+.text ul {
+  padding-left: 1.5rem;
+}
+
 /* Blog list section */
 .post {
-  padding-top: 5px;
   color: var(--fg);
+  background-color: var(--bg0_s);
+  padding: 0.5rem 1rem;
+  margin: 0;
+}
+
+.post:nth-child(odd) {
+  background-color: var(--bg0_h);
 }
 
 .post p {
@@ -380,4 +394,31 @@ section {
 
   gap: 4px;
   grid-auto-flow: column;
+}
+
+pre {
+  background: var(--bg0_s);
+  padding: 0 1rem 0 1rem;
+  font-size: 0.95rem;
+  overflow-x: auto;
+  border: 3px solid var(--bg1);
+}
+
+::-webkit-scrollbar,
+::-webkit-scrollbar-thumb {
+  width: 10px;
+  background-color: var(--fg4);
+}
+
+::-webkit-scrollbar:horizontal,
+::-webkit-scrollbar-thumb:horizontal {
+  height: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background-color: var(--bg0_s);
+}
+
+::-webkit-scrollbar-track:hover {
+  background-color: var(--bg0_s);
 }
