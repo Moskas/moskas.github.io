@@ -5,6 +5,14 @@
     <link>https://moskas.github.io/</link>
     <description>Moskas' blog</description>
     <item>
+      <title>Cursed idea</title>
+      <guid>https://moskas.github.io/POSTS/cursed-idea</guid>
+      <link>https://moskas.github.io/POSTS/cursed-idea</link>
+      <description>Small summary of my Boox and Emacs
+      setup</description>
+      <pubDate>Mon, 04 Sep 2023 00:45:00 +0000</pubDate>
+    </item>
+    <item>
       <title>Keyboards and me</title>
       <guid>https://moskas.github.io/POSTS/keyboards</guid>
       <link>https://moskas.github.io/POSTS/keyboards</link>

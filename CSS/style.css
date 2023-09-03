@@ -188,6 +188,25 @@ img {
   margin: 0 10px 0 0;
 }
 
+@media (min-width: 800px) {
+  .img-post {
+    max-width: 48%;
+    padding: 0 !important;
+    margin-top: 0 !important;
+    border: 2px solid var(--gruv-cyan);
+  }
+  .img-post:nth-child(odd) {
+    float: left;
+  }
+}
+
+@media (max-width: 800px) {
+  /* Due to small screen size it's not worth setting max-width */
+  .img-post {
+    border: 2px solid var(--gruv-cyan);
+  }
+}
+
 h1 {
   color: var(--gruv-magenta);
   font-size: 1.75em;
@@ -196,6 +215,8 @@ h1 {
 h2 {
   color: var(--gruv-cyan);
   font-size: 1.5em;
+  padding-bottom: 4px;
+  border-bottom: 1px dashed var(--gruv-cyan);
 }
 
 h3 {
@@ -277,9 +298,22 @@ blockquote p {
     box-sizing: border-box;
     word-break: break-word;
   }
+  @media (prefers-color-scheme: dark) {
+    .info {
+      background: var(--bg0_h);
+    }
+  }
+
+  @media (prefers-color-scheme: light) {
+    .info {
+      background: var(--bg0_s);
+    }
+  }
+
   .text {
     flex-basis: 66.66%;
     box-sizing: border-box;
+    padding-left: 10px;
   }
 }
 
@@ -319,6 +353,7 @@ blockquote p {
 .info h1,
 .text h1 {
   border-bottom: 2px solid var(--gruv-magenta);
+  padding-bottom: 4px;
   text-align: center;
 }
 
