@@ -90,7 +90,7 @@ html {
 
 body {
   margin: 1em auto;
-  padding: 1em;
+  padding: 0;
   max-width: 55rem;
 }
 
@@ -104,6 +104,10 @@ header {
 header a {
   text-decoration: underline;
   text-decoration-color: var(--gruv-green);
+}
+
+.separator {
+  margin: 0 5px;
 }
 
 header .logo {
@@ -201,9 +205,11 @@ img {
 }
 
 @media (max-width: 800px) {
-  /* Due to small screen size it's not worth setting max-width */
   .img-post {
     border: 2px solid var(--gruv-cyan);
+  }
+  .img-paragraph {
+    display: none;
   }
 }
 
@@ -216,16 +222,16 @@ h2 {
   color: var(--gruv-cyan);
   font-size: 1.5em;
   padding-bottom: 4px;
-  border-bottom: 1px dashed var(--gruv-cyan);
+  border-bottom: 1px solid var(--gruv-cyan);
 }
 
 h3 {
-  color: var(--gruv-blue);
+  color: var(--gruv-green);
   font-size: 1.25em;
 }
 
 h4 {
-  color: var(--gruv-green);
+  color: var(--gruv-magenta);
   font-size: 1.1em;
 }
 
@@ -252,7 +258,7 @@ li::marker {
 }
 
 .post-info {
-  color: var(--bg4);
+  color: var(--fg4);
   padding: 0;
   margin-bottom: 20px;
 }
@@ -269,7 +275,7 @@ li::marker {
 blockquote {
   background-color: var(--bg1);
   padding: 1rem;
-  border-left: 0.25rem solid var(--fg0);
+  border-left: 0.25rem solid var(--bg4);
   margin: 0.7rem;
 }
 
@@ -300,13 +306,13 @@ blockquote p {
   }
   @media (prefers-color-scheme: dark) {
     .info {
-      background: var(--bg0_h);
+      background: var(--bg1);
     }
   }
 
   @media (prefers-color-scheme: light) {
     .info {
-      background: var(--bg0_s);
+      background: var(--bg1);
     }
   }
 
@@ -314,6 +320,7 @@ blockquote p {
     flex-basis: 66.66%;
     box-sizing: border-box;
     padding-left: 10px;
+    background: var(--bg0_s);
   }
 }
 
