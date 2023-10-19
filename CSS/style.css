@@ -1,5 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=JetBrains+Mono&display=swap");
-
+@import "https://www.nerdfonts.com/assets/css/webfont.css";
 @media (prefers-color-scheme: dark) {
   :root {
     /*  Accent colors       */
@@ -90,7 +90,7 @@ html {
 
 body {
   margin: 1em auto;
-  padding: 0;
+  padding: 0 1rem;
   max-width: 55rem;
 }
 
@@ -104,6 +104,17 @@ header {
 header a {
   text-decoration: underline;
   text-decoration-color: var(--gruv-green);
+  float: left;
+  display: block;
+  text-align: center;
+  padding: 0 9px;
+  font-weight: 900;
+}
+
+header::after {
+  content: "";
+  clear: both;
+  display: table;
 }
 
 .separator {
@@ -111,8 +122,8 @@ header a {
 }
 
 header .logo {
-  display: block;
-  font-size: 2rem;
+  display: flex;
+  font-size: 2.2rem;
   font-weight: 900;
   padding-bottom: 1rem;
   margin: 0;
@@ -120,7 +131,7 @@ header .logo {
 }
 
 main {
-  padding: 1rem;
+  padding: 1vw;
   display: block;
 }
 
@@ -129,7 +140,7 @@ main li {
 }
 
 main p {
-  margin-top: 5px;
+  margin: 1rem 0;
 }
 
 a {
@@ -241,6 +252,10 @@ h5 {
   margin: 0;
 }
 
+ul {
+  margin-left: -10px;
+}
+
 ul li::marker {
   content: "* ";
 }
@@ -273,7 +288,7 @@ li::marker {
 }
 
 blockquote {
-  background-color: var(--bg1);
+  background-color: var(--bg0_s);
   padding: 1rem;
   border-left: 0.25rem solid var(--bg4);
   margin: 0.7rem;
@@ -346,6 +361,7 @@ blockquote p {
   .text {
     box-sizing: border-box;
   }
+
   .info-list {
     width: 100% !important;
   }

@@ -1,94 +1,113 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="utf-8">
+  <head>
+    <meta charset="utf-8" />
     <title>Cursed idea</title>
-    <link rel="stylesheet" href="../CSS/style.css">
-    <meta name="viewport" content=
-    "width=device-width,initial-scale=1">
-    <link rel="icon" href="../IMG/kitty.png">
-</head>
-<body>
+    <link rel="stylesheet" href="../CSS/style.css" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <link rel="icon" href="../IMG/kitty.png" />
+  </head>
+  <body>
     <header>
-        <p class="logo">Moskas' Website</p><a href=
-        "../index.html">Home</a> | <a href="../blog.html">Blog</a>
-        | <a href="../about.html">About Me</a> | <a href=
-        "../projects.html">Projects</a> | <a href=
-        "../cats.html">Cats</a> | <a href="../vsrg.html">Rhythm
-        games</a>
+      <p class="logo">Moskas' Website</p>
+      <a href="../index.html">Home</a><a href="../blog.html">Blog</a>
+      <a href="../about.html">About Me</a><a href="../projects.html">Projects</a
+      ><a href="../cats.html">Cats</a><a href="../vsrg.html">Rhythm games</a>
     </header>
     <main>
-        <h1 class="title">Cursed idea</h1>
-        <p class="post-info">Posted on: 04.09.2023 - @Moskas</p>
-        <h2>Background</h2>
-        <p>Ever since I got my first e-ink reader with Android,
-        I've been wondering about other uses I can find for it. One
-        of the initial thoughts was to check if it supports a
-        keyboard and mouse via a USB dongle, and it indeed works
-        without any problems. So, naturally, after that, I had a
-        rather stupid idea.</p>
-        <blockquote>
-            <i>Why not try installing <a href=
-            "https://termux.dev/en/">Termux</a> and set up a
-            portable writing environment on it?</i>
-        </blockquote>
-        <p>To be fair, I've done the exact same thing before with
-        my phones, partly because I needed to use some Linux tools
-        on the go to debug network problems at work.</p><img class=
-        "img-post" src="../IMG/Boox/termux-neofetch.jpg" alt=
-        "Termux with neofetch for bragging rights"> <img src=
-        "../IMG/Boox/emacs-post-draft.jpg" class="img-post" alt=
-        "Early draft of the post written and edited on the Boox">
-        <h2>Shortcomings</h2>
-        <p>One of the issues with my chosen device in this setup is
-        its underlying hardware. Primarily, there's a lack of CPU
-        power and a sparse amount of RAM. The device I'm using is
-        the <b>Onyx Boox Leaf 2</b>, and for its intended purpose,
-        it's more than sufficient. I've read many books and mangas
-        on it without any issues, but the main struggle arose when
-        I began setting up Emacs in Termux.</p>
-        <p>As a Doom-Emacs user, I cloned the repository and
-        launched the installation command. However, the tablet
-        struggled with it because it had to compile some code
-        during the installation, and due to the low system memory,
-        Termux kept closing itself. Thankfully, doom-emacs is
-        intelligent; it was able to pick up where it left off. So,
-        after a couple of attempts, it managed to finish the
-        installation.</p>
-        <h2>Summary</h2>
-        <p>In my opinion, the e-ink display is responsive enough
-        for writing text and some code. However, I do not recommend
-        using a mouse with it due to the input delay and the way
-        the screen refreshes, which does not provide a good user
-        experience. The main drawback for writing code, however, is
-        the lack of syntax colors due to the black-and-white
-        screen. <i>(At least for my model; there are some
-        color-capable e-ink devices, and one day I might try using
-        one of those.)</i></p>
-        <p>Battery life also appears to be worse, which could be
-        attributed to Termux being more demanding than any other
-        application I've used, or the USB hub might be drawing
-        enough power to deplete the battery much more quickly than
-        before. Keeping that in mind, this setup is more of a proof
-        of concept rather than an ideal workflow that would replace
-        my laptop.</p><img src=
-        "../IMG/Boox/emacs-doom-dashboard.jpg" class="img-post"
-        alt="Termux running emacs with doom-dashboard visible">
-        <img src="../IMG/Boox/emacs-rust.jpg" class="img-post" alt=
-        "Emacs with Rust code">
-        <blockquote>
-            <i>What's next? How about setting up <a href=
-            "https://github.com/t184256/nix-on-droid">nix-on-droid</a>
-            instead of pure Termux?</i>
-        </blockquote>
+      <h1 class="title">Cursed idea</h1>
+      <p class="post-info">Posted on: 04.09.2023 - @Moskas</p>
+      <h2>Background</h2>
+      <p>
+        Ever since I got my first e-ink reader with Android, I've been wondering
+        about other uses I can find for it. One of the initial thoughts was to
+        check if it supports a keyboard and mouse via a USB dongle, and it
+        indeed works without any problems. So, naturally, after that, I had a
+        rather stupid idea.
+      </p>
+      <blockquote>
+        <i
+          >Why not try installing
+          <a href="https://termux.dev/en/">Termux</a> and set up a portable
+          writing environment on it?</i
+        >
+      </blockquote>
+      <p>
+        To be fair, I've done the exact same thing before with my phones, partly
+        because I needed to use some Linux tools on the go to debug network
+        problems at work.
+      </p>
+      <img
+        class="img-post"
+        src="../IMG/Boox/termux-neofetch.jpg"
+        alt="Termux with neofetch for bragging rights"
+      />
+      <img
+        src="../IMG/Boox/emacs-post-draft.jpg"
+        class="img-post"
+        alt="Early draft of the post written and edited on the Boox"
+      />
+      <h2>Shortcomings</h2>
+      <p>
+        One of the issues with my chosen device in this setup is its underlying
+        hardware. Primarily, there's a lack of CPU power and a sparse amount of
+        RAM. The device I'm using is the <b>Onyx Boox Leaf 2</b>, and for its
+        intended purpose, it's more than sufficient. I've read many books and
+        mangas on it without any issues, but the main struggle arose when I
+        began setting up Emacs in Termux.
+      </p>
+      <p>
+        As a Doom-Emacs user, I cloned the repository and launched the
+        installation command. However, the tablet struggled with it because it
+        had to compile some code during the installation, and due to the low
+        system memory, Termux kept closing itself. Thankfully, doom-emacs is
+        intelligent; it was able to pick up where it left off. So, after a
+        couple of attempts, it managed to finish the installation.
+      </p>
+      <h2>Summary</h2>
+      <p>
+        In my opinion, the e-ink display is responsive enough for writing text
+        and some code. However, I do not recommend using a mouse with it due to
+        the input delay and the way the screen refreshes, which does not provide
+        a good user experience. The main drawback for writing code, however, is
+        the lack of syntax colors due to the black-and-white screen.
+        <i
+          >(At least for my model; there are some color-capable e-ink devices,
+          and one day I might try using one of those.)</i
+        >
+      </p>
+      <p>
+        Battery life also appears to be worse, which could be attributed to
+        Termux being more demanding than any other application I've used, or the
+        USB hub might be drawing enough power to deplete the battery much more
+        quickly than before. Keeping that in mind, this setup is more of a proof
+        of concept rather than an ideal workflow that would replace my laptop.
+      </p>
+      <img
+        src="../IMG/Boox/emacs-doom-dashboard.jpg"
+        class="img-post"
+        alt="Termux running emacs with doom-dashboard visible"
+      />
+      <img
+        src="../IMG/Boox/emacs-rust.jpg"
+        class="img-post"
+        alt="Emacs with Rust code"
+      />
+      <blockquote>
+        <i
+          >What's next? How about setting up
+          <a href="https://github.com/t184256/nix-on-droid">nix-on-droid</a>
+          instead of pure Termux?</i
+        >
+      </blockquote>
     </main>
     <footer>
-        <span style="padding-left: 5px;"><a href="feed.xml">rss</a>
-        <a href="https://github.com/Moskas">git</a> <a href=
-        "https://fosstodon.org/@Moskas">mas</a> <a href=
-        "https://twitter.com/@moskas_dev">twi</a></span>
-        <span style="float: right; padding-right: 5px;">Moskas
-        2023</span>
+      <span style="padding-left: 5px"
+        ><a href="feed.xml">rss</a> <a href="https://github.com/Moskas">git</a>
+        <a href="https://fosstodon.org/@Moskas">mas</a>
+        <a href="https://twitter.com/@moskas_dev">twi</a></span
+      >
+      <span style="float: right; padding-right: 5px">Moskas 2023</span>
     </footer>
-</body>
+  </body>
 </html>
