@@ -1,0 +1,83 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Org-mode support</title>
+    <link rel="stylesheet" href="../CSS/style.css" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <link rel="icon" href="../IMG/kitty.png" />
+  </head>
+  <body>
+    <header>
+      <p class="logo">Moskas' Website</p>
+      <a href="../index.html">Home</a> | <a href="../blog.html">Blog</a> |
+      <a href="../about.html">About Me</a> |
+      <a href="../projects.html">Projects</a> |
+      <a href="../cats.html">Cats</a> | <a href="../vsrg.html">Rhythm games</a>
+    </header>
+    <main>
+      <h1 class="title">Org-mode support</h1>
+      <p class="post-info">Posted on: 17.12.2023 - @Moskas</p>
+      <p>
+        This will be a short post to vent some of my frustration about weird
+        org-mode support on GitHub.
+      </p>
+      <h2>Small introduction</h2>
+      <p>
+        As you may or may not know, I am an Emacs user, and I write notes in
+        org-mode. Even drafts for the blog are first in an org-mode file. I
+        prefer using it over markdown wherever possible, mainly for consistency
+        and additional perks of using Emacs, like code block evaluation, etc.
+      </p>
+      <p>
+        I am currently using two online git repository solutions: GitHub and
+        Gitea/Forgejo (in the form of
+        <a href="https://codeberg.org">codeberg.org</a>). Both of these
+        solutions support org-mode, kind of. While Gitea/Forgejo support is very
+        good, and the format in my Emacs buffer and the format of README.org in
+        the online repository look basically the same, sadly the same thing
+        can't be said about GitHub.
+      </p>
+      <h2>GitHub...</h2>
+      <p>
+        GitHub has its own markdown flavor and documentation on its own wiki.
+        <a
+          href="https://docs.github.com/en/get-started/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax"
+          >Basic writing and formatting syntax
+        </a>
+        wiki page.
+        <p>There is no such thing for org-mode, and many elements of
+            org-mode don't render correctly, like:</p>
+      </p>
+      <ul>
+        <li>
+          Checkboxes They aren't rendered like markdown checkboxes; rather, they
+          are represented as plain text <b>[ ]</b>.
+        </li>
+        <li>
+          Header flags If you want to create a header like <b>* TODO List</b>,
+          you expect it to at least render in the correct way, right? Wrong. The
+          TODO part of the header disappears completely.
+        </li>
+        <li>
+          Org-mode priority flags Org-mode has its own formatting for specifying
+          the importance of a given task: <b>[#A] [#B] [#C]</b>. I know GitHub
+          Markdown doesn't have such flags, so they might as well be removed
+          completely too, but they aren't.
+        </li>
+      </ul>
+      <p>
+        So you can imagine how broken some org-mode files can look when pushed
+        to github as the main <b>README.org</b>.
+      </p>
+    </main>
+    <footer>
+      <span style="padding-left: 5px"
+        ><a href="feed.xml">rss</a> <a href="https://github.com/Moskas">git</a>
+        <a href="https://fosstodon.org/@Moskas">mas</a>
+        <a href="https://twitter.com/@moskas_dev">twi</a></span
+      >
+      <span style="float: right; padding-right: 5px">Moskas 2023</span>
+    </footer>
+  </body>
+</html>

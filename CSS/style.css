@@ -253,7 +253,7 @@ h5 {
 }
 
 ul {
-  margin-left: -10px;
+  padding-left: 2rem;
 }
 
 ul li::marker {
