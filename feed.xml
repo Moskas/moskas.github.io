@@ -5,6 +5,13 @@
     <link>https://moskas.github.io/</link>
     <description>Moskas' blog</description>
     <item>
+      <title>Org-mode support</title>
+      <guid>https://moskas.github.io/POSTS/orgmode-support</guid>
+      <link>https://moskas.github.io/POSTS/orgmode-support</link>
+      <description>Short post to vent some of my frustration about weird org-mode support on GitHub. </description>
+      <pubDate>Sun, 17 Dec 2023 00:00:00 +0000</pubDate>
+    </item>
+    <item>
       <title>Cursed idea</title>
       <guid>https://moskas.github.io/POSTS/cursed-idea</guid>
       <link>https://moskas.github.io/POSTS/cursed-idea</link>
