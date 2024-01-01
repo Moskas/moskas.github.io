@@ -5,6 +5,13 @@
     <link>https://moskas.github.io/</link>
     <description>Moskas' blog</description>
     <item>
+      <title>New Years Resolutions</title>
+      <guid>https://moskas.github.io/POSTS/new-years-resolutions</guid>
+      <link>https://moskas.github.io/POSTS/new-years-resolutions</link>
+      <description> Post with some toughts about me and my new years plans. </description>
+      <pubDate>Mon, 1 Jan 2024 00:00:00 +0000</pubDate>
+    </item>
+    <item>
       <title>Org-mode support</title>
       <guid>https://moskas.github.io/POSTS/orgmode-support</guid>
       <link>https://moskas.github.io/POSTS/orgmode-support</link>
