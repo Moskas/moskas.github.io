@@ -130,16 +130,19 @@ header .logo {
   color: var(--gruv-green);
 }
 
-main {
+main,
+.content {
   padding: 1vw;
   display: block;
 }
 
-main li {
+main li,
+.content p {
   margin-right: 2rem;
 }
 
-main p {
+main p,
+.content p {
   margin: 1rem 0;
 }
 
@@ -164,7 +167,7 @@ b {
   border-radius: 5px;
 }
 
-body > footer {
+footer {
   margin-top: 8rem;
   margin: auto;
   background-color: var(--gruv-dark-cyan);
@@ -239,6 +242,7 @@ h2 {
 h3 {
   color: var(--gruv-green);
   font-size: 1.25em;
+  margin: 0;
 }
 
 h4 {
@@ -455,10 +459,15 @@ section {
 
 pre {
   background: var(--bg0_s);
-  padding: 0 1rem 0 1rem;
+  padding: 0.5rem 1rem;
   font-size: 0.95rem;
   overflow-x: auto;
   border: 3px solid var(--bg1);
+}
+
+main > code,
+.content > code {
+  color: var(--fg2);
 }
 
 summary::marker {
