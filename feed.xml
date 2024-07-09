@@ -5,6 +5,13 @@
     <link>https://moskas.github.io/</link>
     <description>Moskas' blog</description>
     <item>
+      <title>Nix Naming Conventions</title>
+      <guid>https://moskas.github.io/POSTS/nix-naming-conentions</guid>
+      <link>https://moskas.github.io/POSTS/nix-naming-conentions</link>
+      <description> Small rant about naming of options nix modules </description>
+      <pubDate>Tue, 9 Jul 2024 21:00:00 +0000</pubDate>
+    </item>
+    <item>
       <title>New Years Resolutions</title>
       <guid>https://moskas.github.io/POSTS/new-years-resolutions</guid>
       <link>https://moskas.github.io/POSTS/new-years-resolutions</link>

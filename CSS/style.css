@@ -74,6 +74,10 @@
   }
 }
 
+:root {
+  --warning: var(--gruv-red);
+}
+
 ::selection {
   color: var(--bg);
   background-color: var(--fg);
@@ -95,9 +99,7 @@ body {
 }
 
 header {
-  padding-bottom: 0.8rem;
-  padding-left: 0.4rem;
-  padding-right: 0.4rem;
+  padding: 1rem 0.8rem 0.4rem 0.4rem;
   border-bottom: 5px solid var(--gruv-dark-cyan);
 }
 
@@ -123,11 +125,12 @@ header::after {
 
 header .logo {
   display: flex;
-  font-size: 2.2rem;
+  font-size: 2rem;
   font-weight: 900;
   padding-bottom: 1rem;
-  margin: 0;
+  margin: 0 10px;
   color: var(--gruv-green);
+  line-height: 1;
 }
 
 main,
@@ -137,7 +140,7 @@ main,
 }
 
 main li,
-.content p {
+.content li {
   margin-right: 2rem;
 }
 
@@ -195,7 +198,6 @@ img {
   margin-left: auto;
   margin-right: auto;
   margin-top: 20px;
-  margin-bottom: 20px;
 }
 
 .img-paragraph {
@@ -291,6 +293,19 @@ li::marker {
   display: block;
 }
 
+#table-of-contents {
+  background: var(--bg0_s);
+  padding: 10px;
+  margin: 0.5rem 0 0.5rem 0.5rem;
+  border: 1px solid var(--gruv-cyan);
+}
+
+#table-of-contents h2 {
+  color: var(--gruv-magenta);
+  text-align: center;
+  border-bottom: 1px solid;
+}
+
 blockquote {
   background-color: var(--bg0_s);
   padding: 1rem;
@@ -322,6 +337,10 @@ blockquote p {
     flex-wrap: wrap;
     box-sizing: border-box;
     word-break: break-word;
+  }
+  #table-of-contents {
+    float: right;
+    max-width: 40%;
   }
   @media (prefers-color-scheme: dark) {
     .info {
@@ -459,7 +478,7 @@ section {
 
 pre {
   background: var(--bg0_s);
-  padding: 0.5rem 1rem;
+  padding: 0.5rem 1rem 0.5rem 1rem;
   font-size: 0.95rem;
   overflow-x: auto;
   border: 3px solid var(--bg1);
