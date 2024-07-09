@@ -1,0 +1,155 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Nix Naming Conventions</title>
+    <link rel="stylesheet" href="../CSS/style.css" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <link rel="icon" href="../IMG/kitty.png" />
+  </head>
+
+  <body>
+    <header>
+      <p class="logo">Moskas' Website</p>
+      <a href="../index.html">Home</a><a href="../blog.html">Blog</a>
+      <a href="../about.html">About Me</a>
+      <a href="../projects.html">Projects</a>
+      <a href="../cats.html">Cats</a><a href="../vsrg.html">Rhythm games</a>
+    </header>
+    <main>
+      <div id="table-of-contents" role="doc-toc">
+        <h2>Table of Contents</h2>
+        <div id="text-table-of-contents" role="doc-toc">
+          <ul>
+            <li><a href="#org01afa4e">Naming conventions</a></li>
+            <li><a href="#org798e4ac">Nixvim</a></li>
+          </ul>
+        </div>
+      </div>
+      <div id="content" class="content">
+        <h1 class="title">Nix Naming Conventions</h1>
+        <p class="post-info">Posted on: 09.07.2024 - @Moskas</p>
+        <p>
+          As I&rsquo;ve been using <b>nix</b> for some time now, I&rsquo;ve been
+          adding more and more modules to my config.
+        </p>
+        <p>
+          But one thing is slowly starting to be annoying with each
+          <b>nix flake update</b>.
+        </p>
+        <div id="outline-container-org01afa4e" class="outline-2">
+          <h2 id="org01afa4e">Naming conventions</h2>
+          <div class="outline-text-2" id="text-1">
+            <p>
+              In nix, there are things called options, which come from modules.
+              The default NixOS modules are pretty consistent in their naming
+              and are easy to guess or to remember.
+            </p>
+
+            <p>For example:</p>
+            <div class="org-src-container">
+              <pre
+                class="src src-nix"
+              ><span style="color: var(--gruv-blue);">environment.sessionVariables</span> = <span style="color: var(--gruv-green);">{</span>
+<span style="color: var(--gruv-green)"> "EDITOR"</span> = <span style="color: var(--gruv-green)">"emacs"</span>;
+<span style="color: var(--gruv-green);">}</span>;
+
+<span style="color: var(--gruv-blue);">nixpkgs.config.allowUnfree</span> = <span style="color: var(--gruv-green);">true</span>;
+</pre>
+            </div>
+
+            <p>
+              Generally, for each whitespace for a new word, there is a capital
+              letter, or if you want a proper name for that, it&rsquo;s Camel
+              Case.
+            </p>
+
+            <p>
+              Of course, there are some options that use dashes (Kebab Case)
+              instead, like:
+            </p>
+            <div class="org-src-container">
+              <pre
+                class="src src-nix"
+              ><span style="color: var(--gruv-blue);">nix.settings</span> = <span style="color: var(--gruv-green);">{</span>
+<span style="color: var(--gruv-blue);"> use-xdg-base-directories</span> = <span style="color: var(--gruv-green);">true</span>;
+<span style="color: var(--gruv-blue);"> warn-dirty</span> = ...;
+<span style="color: var(--gruv-blue);"> experimental-features</span> = <span style="color: var(--gruv-red);">[</span>...<span style="color: var(--gruv-red);">]</span>;
+<span><span style="color:var(--gruv-green);">}</span>;</span>
+</pre>
+            </div>
+
+            <p>
+              But they are rare and mostly come from .conf scheme as nix is
+              configured in conf format on non-NixOS systems.
+            </p>
+
+            <p>
+              There are modules that follow that naming convention, such as
+              Home-Manager. Its syntax for options is the same as the main NixOS
+              modules.
+            </p>
+
+            <p>Sadly, it&rsquo;s not always the case.</p>
+          </div>
+        </div>
+        <div id="outline-container-org798e4ac" class="outline-2">
+          <h2 id="org798e4ac">Nixvim</h2>
+          <div class="outline-text-2" id="text-2">
+            <p>
+              I don&rsquo;t change my nixvim config that often as it&rsquo;s not
+              my main editor, but I do have a somewhat feature-complete
+              <a href="https://github.com/Moskas/nixvim-config">config</a> if I
+              ever need to switch from Emacs.
+            </p>
+
+            <p>
+              One thing that annoys me the most about nixvim is that when I
+              update my flake, I sometimes get errors such as:
+            </p>
+            <blockquote>
+              <span style="color: var(--warning)">warning:</span> The option
+              plugins.none-ls.updateInInsert&rsquo; defined in
+              /nix/store/hppg63y2h1y7f1ci0liiv305rzcicj5g-source/config/lsp/none-ls.nix&rsquo;
+              has been renamed to
+              `plugins.none-ls.settings.update_in_insert&rsquo;
+            </blockquote>
+
+            <p>
+              As you can see, for whatever reason, the option got modified from
+              the regular NixOS module way of writing it to <i>Snake Case</i>.
+              Like why?
+            </p>
+
+            <p>
+              The weirdest thing is the project started out with basically all
+              options in camel case, and over time it&rsquo;s changing to snake
+              case, but it&rsquo;s not consistent with it. It&rsquo;s really
+              annoying, especially when I get a wall of warning just because
+              somebody decided that <i>now</i> this thing should be slightly
+              different and become an annoyance to a user.
+            </p>
+
+            <p>
+              I don&rsquo;t want to modify my config with each update because of
+              things like that.
+            </p>
+          </div>
+        </div>
+      </div>
+      <blockquote>
+        This post is a rant; I have nothing against anyone that creates modules
+        that I use. In fact, I'm happy that I can do so much in nix thanks to
+        other people's contributions.
+      </blockquote>
+    </main>
+    <footer>
+      <span style="padding-left: 5px"
+        ><a href="feed.xml">rss</a> <a href="https://github.com/Moskas">git</a>
+        <a href="https://fosstodon.org/@Moskas">mas</a>
+        <a href="https://twitter.com/@moskas_dev">twi</a></span
+      >
+      <span style="float: right; padding-right: 5px">Moskas 2024</span>
+    </footer>
+  </body>
+</html>
