@@ -76,6 +76,7 @@
 
 :root {
   --warning: var(--gruv-red);
+  --information: var(--gruv-blue);
 }
 
 ::selection {
@@ -96,6 +97,10 @@ body {
   margin: 1em auto;
   padding: 0 1rem;
   max-width: 55rem;
+}
+
+hr {
+  color: var(--bg3);
 }
 
 header {
@@ -133,8 +138,7 @@ header .logo {
   line-height: 1;
 }
 
-main,
-.content {
+main {
   padding: 1vw;
   display: block;
 }
@@ -297,13 +301,14 @@ li::marker {
   background: var(--bg0_s);
   padding: 10px;
   margin: 0.5rem 0 0.5rem 0.5rem;
-  border: 1px solid var(--gruv-cyan);
+  border: 1px solid var(--bg2);
 }
 
 #table-of-contents h2 {
   color: var(--gruv-magenta);
   text-align: center;
   border-bottom: 1px solid;
+  margin: 0;
 }
 
 blockquote {
@@ -429,18 +434,35 @@ blockquote p {
 
 /* Blog list section */
 .post {
-  color: var(--fg);
   background-color: var(--bg0_s);
   padding: 0.5rem 1rem;
+  margin: 0.5rem 0.5rem;
+}
+
+.post:hover {
+  background: var(--bg1);
+  text-decoration: underline;
+}
+
+.post h2 {
+  margin: 10px 0;
+  border-bottom: 2px solid var(--bg2);
+}
+
+.post-compact {
+  color: var(--fg);
+  background-color: var(--bg0_s);
+  padding: 5px 1rem;
   margin: 0;
+  border-bottom: 1px solid var(--bg4);
 }
 
-.post:nth-child(odd) {
-  background-color: var(--bg0_h);
+.post-compact:last-child {
+  border-bottom: none;
 }
 
-.post p {
-  color: var(--gruv-cyan) !important;
+.year-separator {
+  margin-left: 5px;
 }
 
 /* Gallery */
@@ -527,4 +549,13 @@ details p {
 
 ::-webkit-scrollbar-track:hover {
   background-color: var(--bg0_s);
+}
+
+.note {
+  color: var(--information);
+}
+
+.note::after {
+  content: ":";
+  color: var(--fg);
 }
