@@ -325,6 +325,7 @@ blockquote {
   padding: 1rem;
   border-left: 0.25rem solid var(--bg4);
   margin: 0.7rem;
+  overflow-wrap: break-word;
 }
 
 blockquote p {
