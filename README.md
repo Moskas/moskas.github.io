@@ -9,7 +9,8 @@
 <img src="https://img.shields.io/static/v1?logo=nixos&logoColor=white&label=&message=Built%20with%20Nix&color=41439a" alt="Built with Nix">
 
 ## Contents
-- [Blog Pages - with RSS feed](https://moskas.github.io/POSTS)
+- [Blog](https://moskas.github.io/blog)
+- [RSS feed](https://moskas.github.io/feed.xml)
 - [About Me Section](https://moskas.github.io/about)
 - [Project Showcase](https://moskas.github.io/projects)
 
