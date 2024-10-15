@@ -79,6 +79,13 @@
   --information: var(--gruv-blue);
 }
 
+a:focus {
+  box-shadow: none !important;
+  outline-width: thin;
+  outline-style: solid;
+  outline-color: var(--gruv-cyan) !important;
+}
+
 ::selection {
   color: var(--bg);
   background-color: var(--fg);
@@ -137,6 +144,10 @@ header .logo {
   margin: 0 10px;
   color: var(--gruv-green);
   line-height: 1;
+}
+
+nav {
+  display: inline-block;
 }
 
 main {
@@ -563,6 +574,9 @@ details p {
 
 .note {
   color: var(--information);
+  font-size: 1.4rem;
+  display: block;
+  padding-bottom: 1rem;
 }
 
 .note::after {
