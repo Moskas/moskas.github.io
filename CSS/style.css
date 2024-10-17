@@ -119,8 +119,6 @@ header {
 header a {
   text-decoration: underline;
   text-decoration-color: var(--gruv-green);
-  float: left;
-  display: block;
   text-align: center;
   padding: 0 9px;
   font-weight: 900;
@@ -144,10 +142,6 @@ header .logo {
   margin: 0 10px;
   color: var(--gruv-green);
   line-height: 1;
-}
-
-nav {
-  display: inline-block;
 }
 
 main {
@@ -250,6 +244,10 @@ img {
 
   .uses-table {
     width: 100%;
+  }
+
+  nav {
+    display: inline-block;
   }
 }
 
