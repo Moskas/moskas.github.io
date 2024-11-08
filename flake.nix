@@ -14,7 +14,25 @@
       system:
       let
         pkgs = import nixpkgs { inherit system; };
-        version = "09.04.2024";
+        version = "08.11.2024";
+        run-server = pkgs.stdenv.mkDerivation rec {
+          name = "run-web-server";
+          src = ./.;
+          unpackPhase = "true";
+          buildPhase = ":";
+          installPhase = ''
+            mkdir -p $out/bin
+            echo '#!${pkgs.python312}/bin/python3' > $out/bin/run-web-server
+            echo 'import http.server' >> $out/bin/run-web-server
+            echo 'import socketserver' >> $out/bin/run-web-server
+            echo 'port = 8000' >> $out/bin/run-web-server
+            echo 'handler = http.server.SimpleHTTPRequestHandler' >> $out/bin/run-web-server
+            echo 'with socketserver.TCPServer(("", port), handler) as httpd:' >> $out/bin/run-web-server
+            echo ' print(f"Server started at http://localhost:{port}/")' >> $out/bin/run-web-server
+            echo ' httpd.serve_forever()' >> $out/bin/run-web-server
+            chmod +x $out/bin/run-web-server
+          '';
+        };
       in
       with pkgs;
       {
@@ -22,10 +40,12 @@
           buildInputs = [
             html-tidy
             nodePackages.prettier
+            simple-http-server
           ];
         };
         packages = {
-          default = stdenv.mkDerivation {
+          default = run-server;
+          site = stdenv.mkDerivation {
             name = "moskas.github.io";
             inherit version;
             src = ./.;
