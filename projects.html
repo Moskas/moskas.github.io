@@ -19,55 +19,141 @@
       <a href="nix-links.html">Nix</a>
     </header>
     <main>
-      <h1>My personal projects</h1>
-      <ul>
-        <li>
-          <h3>
-            <a href="https://github.com/Moskas/mpd-notify-rs">
-              mpd notification daemon</a
-            >
-          </h3>
-          <p>
-            Simple notification daemon for mpd, it fetches album, artist, title
-            and cover of the album and sends a notification about status, song
-            changes etc. Works across all platforms that are supported by Rust
-            and mpd.
-          </p>
-        </li>
-        <li>
-          <h3>
-            <a href="https://github.com/Moskas/vibepy"> vibepy</a>
-          </h3>
-          <p>
-            Small cli application written in Python that scrapes YouTube
-            channel/playlist and plays random video from given channel/playlist.
-            As name implies it's for "vibing" so it's for background noise while
-            you work or relax.
-          </p>
-        </li>
-        <li>
-          <h3>
-            <a href="https://github.com/Moskas/wh-dl"> whdl</a>
-          </h3>
-          <p>
-            Cli application written in Rust for querying links for wallpapers
-            from
-            <a href="https://wallhaven.cc/"> wallhaven.cc</a> using it's api and
-            async Rust.
-          </p>
-        </li>
-        <li>
-          <h3>
-            <a href="https://github.com/Moskas/nixos-config"> Nixos configs</a>
-          </h3>
-          <p>
-            Not exacly a programming project, more of a DevOps one. List of
-            configurations for systems and services written in Nix programming
-            language for reproducable installs and development enviroments
-            across all my devices. Even this site has some nix in it!
-          </p>
-        </li>
-      </ul>
+      <div class="project">
+        <h3>shinbun</h3>
+        <table class="project-info">
+          <tr>
+            <td>Source</td>
+            <td>
+              <a href="https://github.com/Moskas/shinbun">Github</a>
+            </td>
+          </tr>
+          <tr>
+            <td>Tech Stack</td>
+            <td>Rust: ratatui, tokio, serde</td>
+          </tr>
+        </table>
+        <table class="description">
+          <tr>
+            <td>
+              <p>
+                Shinbun is a TUI application for reading news and media feeds.
+                It's heavily inspired by newsboat with added support for vim's
+                <b>hjkl</b> keyboard navigation. <br />The name comes from the
+                japanese work for a newspaper.
+              </p>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="project">
+        <h3>mpd notification daemon</h3>
+        <table class="project-info">
+          <tr>
+            <td>Source</td>
+            <td>
+              <a href="https://github.com/Moskas/mpd-notify-rs">Github</a>
+            </td>
+          </tr>
+          <tr>
+            <td>Tech Stack</td>
+            <td>Rust</td>
+          </tr>
+        </table>
+        <table class="description">
+          <tr>
+            <td>
+              <p>
+                Simple notification daemon for mpd, it fetches album, artist,
+                title and cover of the album and sends a notification about
+                status, song changes etc. Works across all platforms that are
+                supported by Rust and mpd.
+              </p>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="project">
+        <h3>vibepy</h3>
+        <table class="project-info">
+          <tr>
+            <td>Source</td>
+            <td>
+              <a href="https://github.com/Moskas/vibepy">Github</a>
+            </td>
+          </tr>
+          <tr>
+            <td>Tech Stack</td>
+            <td>Python</td>
+          </tr>
+        </table>
+        <table class="description">
+          <tr>
+            <td>
+              <p>
+                Small cli application written in Python that scrapes YouTube
+                channel/playlist and plays random video from given
+                channel/playlist. As name implies it's for <i>vibing</i> so it's
+                for background noise while you work or relax.
+              </p>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="project">
+        <h3>whdl</h3>
+        <table class="project-info">
+          <tr>
+            <td>Source</td>
+            <td>
+              <a href="https://github.com/Moskas/whdl">Github</a>
+            </td>
+          </tr>
+          <tr>
+            <td>Tech Stack</td>
+            <td>Rust: Tokio, Serde, Clap</td>
+          </tr>
+        </table>
+        <table class="description">
+          <tr>
+            <td>
+              <p>
+                Cli application written in Rust for querying links for
+                wallpapers from
+                <a href="https://wallhaven.cc/">wallhaven.cc</a> using it's api
+                and async Rust.
+              </p>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="project">
+        <h3>Nixos configs</h3>
+        <table class="project-info">
+          <tr>
+            <td>Source</td>
+            <td>
+              <a href="https://github.com/Moskas/nixos-config">Github</a>
+            </td>
+          </tr>
+          <tr>
+            <td>Tech Stack</td>
+            <td>Nix: Flakes</td>
+          </tr>
+        </table>
+        <table class="description">
+          <tr>
+            <td>
+              <p>
+                A list of configurations for my computers and servers, written
+                in Nix programming language for reproducable installs and
+                development enviroments across all my devices. Even this site
+                has some nix in it!
+              </p>
+            </td>
+          </tr>
+        </table>
+      </div>
     </main>
     <footer>
       <span style="padding-left: 5px"
