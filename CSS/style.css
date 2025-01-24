@@ -151,10 +151,8 @@ header .logo {
 main {
   padding: 1vw;
   display: block;
-  h1:first-child,
-  h2:first-child,
-  h3:first-child {
-    margin: 0;
+  *:first-child {
+    margin-top: 0;
   }
 }
 
