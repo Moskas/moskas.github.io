@@ -104,7 +104,7 @@ html {
 }
 
 body {
-  margin: 1em auto;
+  margin: 1rem auto;
   padding: 0 1rem 1rem;
   max-width: 55rem;
   background-color: var(--bg);
@@ -151,6 +151,11 @@ header .logo {
 main {
   padding: 1vw;
   display: block;
+  h1:first-child,
+  h2:first-child,
+  h3:first-child {
+    margin: 0;
+  }
 }
 
 main li,
@@ -252,6 +257,10 @@ img {
 
   nav {
     display: inline-block;
+  }
+
+  body {
+    margin: 0 auto;
   }
 }
 
