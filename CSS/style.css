@@ -106,7 +106,7 @@ html {
 body {
   margin: 1rem auto;
   padding: 0 1rem 1rem;
-  max-width: 55rem;
+  max-width: 60rem;
   background-color: var(--bg);
 }
 
@@ -168,12 +168,12 @@ main p,
 
 a {
   color: var(--gruv-cyan);
-  text-decoration: none;
+  text-decoration: underline;
 }
 
 a:hover {
   color: var(--gruv-dark-cyan);
-  text-decoration-color: var(--gruv-dark-green);
+  text-decoration-style: dashed;
 }
 
 i {
@@ -215,6 +215,7 @@ img {
   margin-left: auto;
   margin-right: auto;
   margin-top: 20px;
+  max-height: 100%;
 }
 
 .img-paragraph {
@@ -355,7 +356,6 @@ blockquote p {
   font-style: italic;
 }
 
-/* About me section */
 .flex_main {
   display: flex;
   flex-wrap: wrap;
@@ -469,7 +469,6 @@ blockquote p {
 
 .post:hover {
   background: var(--bg1);
-  text-decoration: underline;
 }
 
 .post h2 {
@@ -674,4 +673,29 @@ thead {
 
 main .project:nth-of-type(n + 2) {
   padding-top: 2rem;
+}
+
+.travels {
+  div {
+    @media (min-width: 800px) {
+      flex-basis: calc(50% - 20px);
+    }
+    @media (max-width: 800px) {
+      flex-basis: 1;
+      max-width: 90%;
+    }
+    h4 {
+      background: var(--bg0_s);
+      padding: 0.5ch 1ch;
+      margin: 0;
+      border-top: 2px solid;
+      span {
+        float: right;
+      }
+    }
+  }
+  gap: 20px;
+  align-items: center;
+  justify-content: center;
+  padding-bottom: 10px;
 }
