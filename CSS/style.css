@@ -98,9 +98,13 @@ html {
 body,
 html {
   color: var(--fg);
-  font-family: "JetBrains Mono", monospace;
+  font-family: "JetBrains Mono", monospace !important;
   line-height: 1.6rem;
   font-size: 1em;
+}
+
+*:not(.nf) {
+  font-family: "JetBrains Mono", monospace !important;
 }
 
 body {
@@ -126,6 +130,14 @@ header a {
   text-align: center;
   padding: 0 9px;
   font-weight: 900;
+}
+
+header .active {
+  color: var(--gruv-magenta);
+}
+
+header .active:hover {
+  color: var(--gruv-dark-magenta);
 }
 
 header::after {
@@ -260,6 +272,10 @@ img {
 
   body {
     margin: 0 auto;
+  }
+
+  html {
+    background: var(--bg);
   }
 }
 
@@ -698,4 +714,26 @@ main .project:nth-of-type(n + 2) {
   align-items: center;
   justify-content: center;
   padding-bottom: 10px;
+}
+
+.dashboard {
+  h1 {
+    text-align: center;
+  }
+  @media (min-width: 800px) {
+    max-width: 50%;
+  }
+  .nf {
+    color: var(--fg3);
+  }
+  margin: auto;
+  .links {
+    border-top: 2px solid var(--bg2);
+    border-bottom: 2px solid var(--bg2);
+    padding: 1rem;
+    .description {
+      float: right;
+      color: var(--fg4);
+    }
+  }
 }

@@ -8,58 +8,51 @@
     <link rel="icon" href="IMG/kitty.png" />
   </head>
   <body>
-    <header>
-      <p class="logo">Moskas' Website</p>
-      <a href="index.html">Home</a>
-      <a href="blog.html">Blog</a>
-      <a href="about.html">About Me</a>
-      <a href="projects.html">Projects</a>
-      <a href="nix-links.html">Nix</a>
-    </header>
-    <main>
-      <h1>Hello there!</h1>
-      <p>
-        <img
-          src="IMG/kitty.png"
-          class="img-paragraph"
-          alt="Avatar of a white cat"
-        />
-        I'm Moskas, a hobbyist computer programmer from Poland. The website has
-        no particular topic other than being mostly tech related. It's mainly a
-        place for me to write some thoughts or list my programming or rhythm
-        game projects.
-      </p>
-      <h1>Recent blog posts</h1>
-      <p class="post-compact">
-        <a href="POSTS/nix-naming-conventions.html"
-          >09.07.2024 :: Nix Naming Conventions</a
-        >
-      </p>
-      <p class="post-compact">
-        <a href="POSTS/new-years-resolutions.html">
-          01.01.2024 :: New Years Resolutions
-        </a>
-      </p>
-
-      <p class="post-compact">
-        <a href="POSTS/orgmode-support.html">17.12.2023 :: Org-mode support</a>
-      </p>
-      <p class="post-compact">
-        <a href="POSTS/cursed-idea.html">04.09.2023 :: Cursed idea</a>
-      </p>
-      <p class="post-compact">
-        <a href="POSTS/keyboards.html">25.07.2023 :: Keyboards and me</a>
-      </p>
-      <p class="post-compact">
-        <a href="POSTS/website-revision.html">19.07.2023 :: Website revision</a>
-      </p>
+    <main class="dashboard">
+      <img src="IMG/kitty.png" alt="Avatar of a white cat" />
+      <h1>Moskas' Website</h1>
+      <div>
+        <div class="links">
+          <i class="nf nf-md-pen"></i> <a href="blog.html">Blog</a>
+          <span class="description"> My humble blog</span>
+          <br />
+          <i class="nf nf-cod-repo"></i> <a href="projects.html">Projects</a>
+          <span class="description">My dev creations</span>
+          <br />
+          <i class="nf nf-fa-user"></i> <a href="about.html">About Me</a>
+          <span class="description">Some info about me</span>
+          <br />
+          <i class="nf nf-fa-calendar_day"></i> <a href="now.html">Now</a>
+          <span class="description">What I'm up to</span>
+          <br />
+          <i class="nf nf-fa-keyboard"></i> <a href="uses.html">Uses</a>
+          <span class="description">What I use daily</span>
+          <br />
+          <i class="nf nf-fa-book" /></i> <a href="library.html">Library</a>
+          <span class="description">Books and Mangas</span>
+          <br />
+          <i class="nf nf-md-train" ></i> <a href="travel.html">Travel</a>
+          <span class="description">My travels</span>
+          <br />
+          <i class="nf nf-md-nix"></i> <a href="nix-links.html">Nix</a>
+          <span class="description">Nix knowledgebase</span>
+          <br />
+        </div>
+        <p style="text-align: center; color: var(--fg4)">
+          Crafted by hand with love<br />
+          <span class="nf nf-fa-git_alt">
+            <a href="https://github.com/Moskas/moskas.github.io"
+              >source</a
+            ></span
+          >
+        </p>
+      </div>
     </main>
     <footer>
       <span style="padding-left: 5px"
         ><a href="feed.xml">rss</a> <a href="https://github.com/Moskas">git</a>
         <a href="https://fosstodon.org/@Moskas">mas</a>
         <a href="https://twitter.com/@moskas_dev">twi</a>
-        <a href="https://libre.fm/user/Moskas" rel="me">lib</a>
       </span>
       <span style="float: right; padding-right: 5px">Moskas 2024</span>
     </footer>
