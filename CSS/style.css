@@ -93,14 +93,16 @@ a:focus {
 
 html {
   background: var(--bg0_s);
+  height: 100vh;
 }
 
 body,
 html {
   color: var(--fg);
   font-family: "JetBrains Mono", monospace !important;
-  line-height: 1.6rem;
+  line-height: 1.6;
   font-size: 1em;
+  min-height: calc(100vh - 1rem);
 }
 
 *:not(.nf) {
@@ -108,7 +110,7 @@ html {
 }
 
 body {
-  margin: 1rem auto;
+  margin: 0 auto;
   padding: 0 1rem 1rem;
   max-width: 60rem;
   background-color: var(--bg);
@@ -129,7 +131,6 @@ header a {
   text-decoration-color: var(--gruv-green);
   text-align: center;
   padding: 0 9px;
-  font-weight: 900;
 }
 
 header .active {
@@ -166,6 +167,7 @@ main {
   *:first-child {
     margin-top: 0;
   }
+  min-height: calc(100vh - 12rem);
 }
 
 main li,
@@ -716,9 +718,19 @@ main .project:nth-of-type(n + 2) {
   padding-bottom: 10px;
 }
 
+main.dashboard {
+  vertical-align: middle;
+  width: 100%;
+}
+
 .dashboard {
   h1 {
     text-align: center;
+  }
+  svg {
+    margin: auto;
+    max-width: 75%;
+    padding: 10px;
   }
   @media (min-width: 800px) {
     max-width: 50%;
