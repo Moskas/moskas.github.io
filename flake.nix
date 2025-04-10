@@ -40,7 +40,10 @@
           buildInputs = [
             html-tidy
             nodePackages.prettier
+            nodePackages.eslint
             simple-http-server
+            nodePackages.npm
+            w3m
           ];
         };
         packages = {
