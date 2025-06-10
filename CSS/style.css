@@ -82,7 +82,6 @@
 a:focus {
   box-shadow: none !important;
   outline-width: thin;
-  outline-style: none;
   outline-color: var(--gruv-cyan) !important;
 }
 
